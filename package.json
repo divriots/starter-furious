@@ -1,0 +1,24 @@
+{
+  "name": "@divriots/starter-furious",
+  "version": "0.0.1",
+  "description": "Furious - a design system based on FAST Frame",
+  "license": "ISC",
+  "repository": "github:divriots/starter-furious",
+  "homepage": "https://backlight.dev/preview/xS11aQmjMLIvr5PU5Mru/",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "serve": "npx backlight@latest serve xS11aQmjMLIvr5PU5Mru --open"
+  },
+  "dependencies": {
+    "@microsoft/fast-colors": "^5.1.3",
+    "@microsoft/fast-components": "^2.8.0",
+    "@microsoft/fast-element": "^1.5.0",
+    "@microsoft/fast-foundation": "^2.9.0",
+    "@microsoft/fast-web-utilities": "^4.8.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
