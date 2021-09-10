@@ -2,7 +2,7 @@
   "name": "@divriots/starter-furious",
   "version": "0.0.1",
   "description": "Furious - a design system based on FAST Frame",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "github:divriots/starter-furious",
   "homepage": "https://backlight.dev/preview/xS11aQmjMLIvr5PU5Mru/",
   "type": "module",
