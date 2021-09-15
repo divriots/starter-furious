@@ -1,4 +1,7 @@
 .*
+*/doc/
+*/stories/
 doc-layout/
 live-configurator/
+studio.config.json
 tsconfig.json
