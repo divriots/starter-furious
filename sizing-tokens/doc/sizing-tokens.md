@@ -54,6 +54,7 @@ class SizingTokensUsage extends FASTElement {
         border-radius: 0;
         border-right: 1px solid black;
         padding: 0 calc((${designUnit} + ${density}) * 3px);
+        margin: 0;
       }
 
       .play-button:hover {
