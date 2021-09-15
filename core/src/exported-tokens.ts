@@ -1,22 +1,13 @@
 import { CSSDesignToken, DesignToken } from '@microsoft/fast-foundation';
 import {
-  accentFillActiveDeltaToken,
   accentFillActiveToken,
-  accentFillFocusDeltaToken,
   accentFillFocusToken,
-  accentFillHoverDeltaToken,
   accentFillHoverToken,
-  accentFillRestDeltaToken,
   accentFillRestToken,
-  accentForegroundActiveDeltaToken,
   accentForegroundActiveToken,
-  accentForegroundFocusDeltaToken,
   accentForegroundFocusToken,
-  accentForegroundHoverDeltaToken,
   accentForegroundHoverToken,
-  accentForegroundRestDeltaToken,
   accentForegroundRestToken,
-  accentPaletteToken,
   baseHeightMultiplierToken,
   baseLayerLuminanceToken,
   bodyFontToken,
@@ -37,39 +28,22 @@ import {
   foregroundOnAccentHoverToken,
   foregroundOnAccentRestLargeToken,
   foregroundOnAccentRestToken,
-  neutralFillActiveDeltaToken,
   neutralFillActiveToken,
-  neutralFillFocusDeltaToken,
   neutralFillFocusToken,
-  neutralFillHoverDeltaToken,
   neutralFillHoverToken,
-  neutralFillInputActiveDeltaToken,
   neutralFillInputActiveToken,
-  neutralFillInputFocusDeltaToken,
   neutralFillInputFocusToken,
-  neutralFillInputHoverDeltaToken,
   neutralFillInputHoverToken,
-  neutralFillInputRestDeltaToken,
   neutralFillInputRestToken,
-  neutralFillLayerRestDeltaToken,
   neutralFillLayerRestToken,
-  neutralFillRestDeltaToken,
   neutralFillRestToken,
-  neutralFillStealthActiveDeltaToken,
   neutralFillStealthActiveToken,
-  neutralFillStealthFocusDeltaToken,
   neutralFillStealthFocusToken,
-  neutralFillStealthHoverDeltaToken,
   neutralFillStealthHoverToken,
-  neutralFillStealthRestDeltaToken,
   neutralFillStealthRestToken,
-  neutralFillStrongActiveDeltaToken,
   neutralFillStrongActiveToken,
-  neutralFillStrongFocusDeltaToken,
   neutralFillStrongFocusToken,
-  neutralFillStrongHoverDeltaToken,
   neutralFillStrongHoverToken,
-  neutralFillStrongRestDeltaToken,
   neutralFillStrongRestToken,
   neutralForegroundHintToken,
   neutralForegroundRestToken,
@@ -79,16 +53,10 @@ import {
   neutralLayer4Token,
   neutralLayerCardContainerToken,
   neutralLayerFloatingToken,
-  neutralPaletteToken,
-  neutralStrokeActiveDeltaToken,
   neutralStrokeActiveToken,
-  neutralStrokeDividerRestDeltaToken,
   neutralStrokeDividerRestToken,
-  neutralStrokeFocusDeltaToken,
   neutralStrokeFocusToken,
-  neutralStrokeHoverDeltaToken,
   neutralStrokeHoverToken,
-  neutralStrokeRestDeltaToken,
   neutralStrokeRestToken,
   strokeWidthToken,
   typeRampBaseFontSizeToken,
@@ -123,22 +91,13 @@ const makeReadOnly = <I, T extends CSSDesignToken<I> | DesignToken<I>>(token: T)
 };
 
 export const accentFillActive = makeReadOnly(accentFillActiveToken);
-export const accentFillActiveDelta = makeReadOnly(accentFillActiveDeltaToken);
 export const accentFillFocus = makeReadOnly(accentFillFocusToken);
-export const accentFillFocusDelta = makeReadOnly(accentFillFocusDeltaToken);
 export const accentFillHover = makeReadOnly(accentFillHoverToken);
-export const accentFillHoverDelta = makeReadOnly(accentFillHoverDeltaToken);
 export const accentFillRest = makeReadOnly(accentFillRestToken);
-export const accentFillRestDelta = makeReadOnly(accentFillRestDeltaToken);
 export const accentForegroundActive = makeReadOnly(accentForegroundActiveToken);
-export const accentForegroundActiveDelta = makeReadOnly(accentForegroundActiveDeltaToken);
 export const accentForegroundFocus = makeReadOnly(accentForegroundFocusToken);
-export const accentForegroundFocusDelta = makeReadOnly(accentForegroundFocusDeltaToken);
 export const accentForegroundHover = makeReadOnly(accentForegroundHoverToken);
-export const accentForegroundHoverDelta = makeReadOnly(accentForegroundHoverDeltaToken);
 export const accentForegroundRest = makeReadOnly(accentForegroundRestToken);
-export const accentForegroundRestDelta = makeReadOnly(accentForegroundRestDeltaToken);
-export const accentPalette = makeReadOnly(accentPaletteToken);
 export const baseHeightMultiplier = makeReadOnly(baseHeightMultiplierToken);
 export const baseLayerLuminance = baseLayerLuminanceToken;
 export const bodyFont = makeReadOnly(bodyFontToken);
@@ -160,39 +119,22 @@ export const foregroundOnAccentHoverLarge = makeReadOnly(foregroundOnAccentHover
 export const foregroundOnAccentRest = makeReadOnly(foregroundOnAccentRestToken);
 export const foregroundOnAccentRestLarge = makeReadOnly(foregroundOnAccentRestLargeToken);
 export const neutralFillActive = makeReadOnly(neutralFillActiveToken);
-export const neutralFillActiveDelta = makeReadOnly(neutralFillActiveDeltaToken);
 export const neutralFillFocus = makeReadOnly(neutralFillFocusToken);
-export const neutralFillFocusDelta = makeReadOnly(neutralFillFocusDeltaToken);
 export const neutralFillHover = makeReadOnly(neutralFillHoverToken);
-export const neutralFillHoverDelta = makeReadOnly(neutralFillHoverDeltaToken);
 export const neutralFillInputActive = makeReadOnly(neutralFillInputActiveToken);
-export const neutralFillInputActiveDelta = makeReadOnly(neutralFillInputActiveDeltaToken);
 export const neutralFillInputFocus = makeReadOnly(neutralFillInputFocusToken);
-export const neutralFillInputFocusDelta = makeReadOnly(neutralFillInputFocusDeltaToken);
 export const neutralFillInputHover = makeReadOnly(neutralFillInputHoverToken);
-export const neutralFillInputHoverDelta = makeReadOnly(neutralFillInputHoverDeltaToken);
 export const neutralFillInputRest = makeReadOnly(neutralFillInputRestToken);
-export const neutralFillInputRestDelta = makeReadOnly(neutralFillInputRestDeltaToken);
 export const neutralFillLayerRest = makeReadOnly(neutralFillLayerRestToken);
-export const neutralFillLayerRestDelta = makeReadOnly(neutralFillLayerRestDeltaToken);
 export const neutralFillRest = makeReadOnly(neutralFillRestToken);
-export const neutralFillRestDelta = makeReadOnly(neutralFillRestDeltaToken);
 export const neutralFillStealthActive = makeReadOnly(neutralFillStealthActiveToken);
-export const neutralFillStealthActiveDelta = makeReadOnly(neutralFillStealthActiveDeltaToken);
 export const neutralFillStealthFocus = makeReadOnly(neutralFillStealthFocusToken);
-export const neutralFillStealthFocusDelta = makeReadOnly(neutralFillStealthFocusDeltaToken);
 export const neutralFillStealthHover = makeReadOnly(neutralFillStealthHoverToken);
-export const neutralFillStealthHoverDelta = makeReadOnly(neutralFillStealthHoverDeltaToken);
 export const neutralFillStealthRest = makeReadOnly(neutralFillStealthRestToken);
-export const neutralFillStealthRestDelta = makeReadOnly(neutralFillStealthRestDeltaToken);
 export const neutralFillStrongActive = makeReadOnly(neutralFillStrongActiveToken);
-export const neutralFillStrongActiveDelta = makeReadOnly(neutralFillStrongActiveDeltaToken);
 export const neutralFillStrongFocus = makeReadOnly(neutralFillStrongFocusToken);
-export const neutralFillStrongFocusDelta = makeReadOnly(neutralFillStrongFocusDeltaToken);
 export const neutralFillStrongHover = makeReadOnly(neutralFillStrongHoverToken);
-export const neutralFillStrongHoverDelta = makeReadOnly(neutralFillStrongHoverDeltaToken);
 export const neutralFillStrongRest = makeReadOnly(neutralFillStrongRestToken);
-export const neutralFillStrongRestDelta = makeReadOnly(neutralFillStrongRestDeltaToken);
 export const neutralForegroundHint = makeReadOnly(neutralForegroundHintToken);
 export const neutralForegroundRest = makeReadOnly(neutralForegroundRestToken);
 export const neutralLayer1 = makeReadOnly(neutralLayer1Token);
@@ -201,17 +143,11 @@ export const neutralLayer3 = makeReadOnly(neutralLayer3Token);
 export const neutralLayer4 = makeReadOnly(neutralLayer4Token);
 export const neutralLayerCardContainer = makeReadOnly(neutralLayerCardContainerToken);
 export const neutralLayerFloating = makeReadOnly(neutralLayerFloatingToken);
-export const neutralPalette = makeReadOnly(neutralPaletteToken);
 export const neutralStrokeActive = makeReadOnly(neutralStrokeActiveToken);
-export const neutralStrokeActiveDelta = makeReadOnly(neutralStrokeActiveDeltaToken);
 export const neutralStrokeDividerRest = makeReadOnly(neutralStrokeDividerRestToken);
-export const neutralStrokeDividerRestDelta = makeReadOnly(neutralStrokeDividerRestDeltaToken);
 export const neutralStrokeFocus = makeReadOnly(neutralStrokeFocusToken);
-export const neutralStrokeFocusDelta = makeReadOnly(neutralStrokeFocusDeltaToken);
 export const neutralStrokeHover = makeReadOnly(neutralStrokeHoverToken);
-export const neutralStrokeHoverDelta = makeReadOnly(neutralStrokeHoverDeltaToken);
 export const neutralStrokeRest = makeReadOnly(neutralStrokeRestToken);
-export const neutralStrokeRestDelta = makeReadOnly(neutralStrokeRestDeltaToken);
 export const strokeWidth = makeReadOnly(strokeWidthToken);
 export const typeRampBaseFontSize = makeReadOnly(typeRampBaseFontSizeToken);
 export const typeRampBaseLineHeight = makeReadOnly(typeRampBaseLineHeightToken);
