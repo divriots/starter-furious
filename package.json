@@ -1,5 +1,5 @@
 {
-  "name": "@divriots/starter-furious",
+  "name": "@backlight-dev/divriots.starter-furious",
   "version": "0.0.1",
   "description": "Furious - a design system based on FAST Frame",
   "license": "MIT",
@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "@microsoft/fast-colors": "^5.1.3",
-    "@microsoft/fast-components": "^2.8.0",
+    "@microsoft/fast-components": "2.11.3",
     "@microsoft/fast-element": "^1.5.0",
-    "@microsoft/fast-foundation": "^2.9.0",
+    "@microsoft/fast-foundation": "2.16.1",
     "@microsoft/fast-web-utilities": "^4.8.0"
   },
   "devDependencies": {
