@@ -48,5 +48,7 @@ export const FsLiveConfiguratorTemplate = html<FsLiveConfigurator>`
     )}
   </div>
   <h2>Preview</h2>
-  <fs-preview ${ref('preview')}></fs-preview>
+  <div ${ref('preview')}>
+    <fs-preview></fs-preview>
+  </div>
 `;
