@@ -19,27 +19,9 @@ provideDesignSystem().register(getAccordion(), getAccordionItem());
 ## Usage
 
 ```js preview-story
-import { html } from '@microsoft/fast-element';
-import { provideDesignSystem, getAccordion, getAccordionItem } from '@divriots/starter-furious';
+import { defaultStory } from '../stories/accordion.stories.js';
 
-provideDesignSystem().register(getAccordion(), getAccordionItem());
-
-export const usageStory = () => html`
-  <fs-accordion>
-    <fs-accordion-item expanded="">
-      <span slot="heading">Panel one</span>
-      Panel one content
-    </fs-accordion-item>
-    <fs-accordion-item>
-      <span slot="heading">Panel two</span>
-      Panel two content
-    </fs-accordion-item>
-    <fs-accordion-item expanded="">
-      <span slot="heading">Panel three</span>
-      Panel three content
-    </fs-accordion-item>
-  </fs-accordion>
-`;
+export { defaultStory };
 ```
 
 ## Use cases
