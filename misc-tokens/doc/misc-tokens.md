@@ -2,7 +2,7 @@
 import { provideDesignSystem } from '@divriots/starter-furious';
 import { FASTElement, css, html } from '@microsoft/fast-element';
 
-provideDesignSystem();
+provideDesignSystem().register();
 ```
 
 # misc-tokens

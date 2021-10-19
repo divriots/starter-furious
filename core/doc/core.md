@@ -2,15 +2,17 @@
 
 To start using `Furious` each application needs a bit of setup code. This page explains how to provide the design system to the application, register components which you plan to use and start off by making your own components.
 
-## Provide design system
+## Initialise design system
 
-Normally you provide the design system globaly for the entire page like this:
+Normally you initialise the design system globaly for the entire page like this:
 
 ```ts
 import { provideDesignSystem } from '@divriots/starter-furious';
 
-provideDesignSystem();
+provideDesignSystem().register();
 ```
+
+Method `register` is used to register required components and is documented in the next section.
 
 When your page needs multiple design systems, e.g. for demo purposes, you can select a specific app root and pass it to the provider function, so that it only effects this app root element and its DOM subtree.
 
@@ -18,7 +20,7 @@ When your page needs multiple design systems, e.g. for demo purposes, you can se
 import { provideDesignSystem } from '@divriots/starter-furious';
 
 const $appRoot = document.querySelector('#app-root');
-provideDesignSystem($appRoot);
+provideDesignSystem($appRoot).register();
 ```
 
 Keep in mind that in any case all custom element names will be registered in the global registry and available everywhere, but the theme will only be applied correctly in the `#app-root`.
