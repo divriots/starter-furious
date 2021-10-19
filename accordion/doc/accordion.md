@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # accordion
 
 As defined by the [W3C](https://w3c.github.io/aria-practices/#accordion):

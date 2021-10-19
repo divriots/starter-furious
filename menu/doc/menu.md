@@ -1,6 +1,4 @@
 ```js script
-import '~/doc-layout';
-
 import { html } from '@microsoft/fast-element';
 import { provideDesignSystem, getDivider, getMenu, getMenuItem } from '@divriots/starter-furious';
 

@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # listbox
 
 An implementation of a [listbox](https://w3c.github.io/aria-practices/#Listbox). While any DOM content is permissible as a child of the listbox, only [`fs-option`](../../option/doc/option.md) elements, `option` elements, and slotted items with `role="option"` will be treated as options and receive keyboard support.

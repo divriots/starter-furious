@@ -1,6 +1,5 @@
 ```js script
 import '~/dockit/dockit-fast-frame-typography-tokens';
-import '~/doc-layout';
 ```
 
 # typography-tokens

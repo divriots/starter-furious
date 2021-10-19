@@ -2,8 +2,7 @@
 @import 'https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.4.1/dist/typography.min.css';
 @import 'https://gitcdn.link/repo/PrismJS/prism-themes/master/themes/prism-vsc-dark-plus.css';
 
-body.prose {
-  margin: 0;
+.prose {
   max-width: 1000px;
   padding: 30px;
 }

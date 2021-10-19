@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # anchor
 
 As defined by the W3C:

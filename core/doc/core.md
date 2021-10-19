@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # core
 
 To start using `Furious` each application needs a bit of setup code. This page explains how to provide the design system to the application, register components which you plan to use and start off by making your own components.

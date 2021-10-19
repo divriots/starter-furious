@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # data-grid
 
 The `fs-data-grid` component is used to display tabular data. The `fs-data-grid-row` and `fs-data-grid-cell` components are typically created programmatically by the parent grid but some authors may find it useful to create them manually.
