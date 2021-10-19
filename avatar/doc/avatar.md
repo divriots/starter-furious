@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # avatar
 
 The `fs-avatar` component is used to graphically represent a user or an object.

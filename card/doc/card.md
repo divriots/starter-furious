@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # card
 
 The `fs-card` component is a visual container without semantics that takes children. Cards are snapshots of content that are typically used in a group to present collections of related information.

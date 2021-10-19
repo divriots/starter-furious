@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # tree-view
 
 As defined by the [W3C](https://w3c.github.io/aria/#tree):

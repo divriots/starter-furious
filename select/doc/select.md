@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # select
 
 An implementation of an [HTML select element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) as a form-connected web-component.

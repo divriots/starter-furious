@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # sizing-tokens
 
 Contains the following tokens:

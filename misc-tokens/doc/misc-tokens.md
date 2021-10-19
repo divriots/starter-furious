@@ -1,6 +1,4 @@
 ```js script
-import '~/doc-layout';
-
 import { provideDesignSystem } from '@divriots/starter-furious';
 import { FASTElement, css, html } from '@microsoft/fast-element';
 

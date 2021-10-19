@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # breadcrumb
 
 As defined by the [W3C](https://w3c.github.io/aria-practices/#breadcrumb):

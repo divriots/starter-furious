@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # radio-group
 
 As defined by the [W3C](https://w3c.github.io/aria-practices/#radiobutton):

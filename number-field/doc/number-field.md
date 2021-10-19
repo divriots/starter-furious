@@ -1,7 +1,3 @@
-```js script
-import '~/doc-layout';
-```
-
 # number-field
 
 An implementation of a [text field](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/text) as a form-connected web-component. The `fs-number-field` supports two visual appearances, outline and filled, with the control defaulting to the outline appearance.

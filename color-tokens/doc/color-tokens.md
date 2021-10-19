@@ -1,7 +1,6 @@
 ```js script
 import '~/dockit/dockit-fast-frame-color-palette';
 import '~/dockit/dockit-fast-frame-color-tokens';
-import '~/doc-layout';
 ```
 
 # color-tokens
