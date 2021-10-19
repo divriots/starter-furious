@@ -1,6 +1,8 @@
 ```js script
+import { provideDesignSystem } from '@divriots/starter-furious';
 import '~/dockit/dockit-fast-frame-color-palette';
 import '~/dockit/dockit-fast-frame-color-tokens';
+provideDesignSystem();
 ```
 
 # color-tokens
@@ -10,10 +12,8 @@ import '~/dockit/dockit-fast-frame-color-tokens';
 ## Usage
 
 ```js preview-story
-import { provideDesignSystem, accentFillRest, foregroundOnAccentRest } from '@divriots/starter-furious';
+import { accentFillRest, foregroundOnAccentRest } from '@divriots/starter-furious';
 import { FASTElement, css, html } from '@microsoft/fast-element';
-
-provideDesignSystem();
 
 class ColorTokensUsage extends FASTElement {
   static definition = {
