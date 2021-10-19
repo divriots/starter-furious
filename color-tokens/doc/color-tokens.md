@@ -2,7 +2,7 @@
 import { provideDesignSystem } from '@divriots/starter-furious';
 import '~/dockit/dockit-fast-frame-color-palette';
 import '~/dockit/dockit-fast-frame-color-tokens';
-provideDesignSystem();
+provideDesignSystem().register();
 ```
 
 # color-tokens
