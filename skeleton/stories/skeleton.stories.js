@@ -21,12 +21,25 @@ export const defaultStory = () => html`
         shape="rect"
       ></fs-skeleton>
     </div>
+    <fs-skeleton
+      class="card-pattern"
+      shape="rect"
+      pattern="https://static.fast.design/assets/skeleton-test-pattern.svg"
+      shimmer=""
+    ></fs-skeleton>
     <style>
       .card-placeholder {
         background-color: #fff;
         padding: 20px;
         width: 500px;
         border-radius: 4px;
+      }
+
+      .card-pattern {
+        border-radius: 4px;
+        width: 500px;
+        height: 250px;
+        margin: 10px 0;
       }
     </style>
   </div>
