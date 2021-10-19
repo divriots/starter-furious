@@ -2,22 +2,8 @@
   "packages": {
     "dir": "",
     "menu": [
-      [
-        "foundation",
-        [
-          "core"
-        ]
-      ],
-      [
-        "tokens",
-        [
-          "color-tokens",
-          "typography-tokens",
-          "sizing-tokens",
-          "misc-tokens",
-          "live-configurator"
-        ]
-      ],
+      ["foundation", ["core"]],
+      ["tokens", ["color-tokens", "typography-tokens", "sizing-tokens", "misc-tokens", "live-configurator"]],
       [
         "components",
         [
@@ -66,13 +52,7 @@
           "tree-view"
         ]
       ],
-      [
-        "infrastructure",
-        [
-          "dockit",
-          "doc-layout"
-        ]
-      ]
+      ["infrastructure", ["dockit", "doc-layout"]]
     ]
   }
 }

@@ -25,7 +25,7 @@
 # Docs and stories
 
 All components docs & stories are generated from [FAST repository](https://github.com/microsoft/fast), with the following license:
-  
+
     MIT License
 
     Copyright (c) Microsoft Corporation. All rights reserved.
