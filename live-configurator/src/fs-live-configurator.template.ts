@@ -1,10 +1,9 @@
 import { html, ref, repeat } from '@microsoft/fast-element';
 import { FsLiveConfigurator } from './fs-live-configurator';
-import './fs-preview';
+import { PreviewTemplate } from './preview.template';
 
 export const FsLiveConfiguratorTemplate = html<FsLiveConfigurator>`
   <h2>Configure</h2>
-  <fs-checkbox @change="${(x, c) => x.darkModeChangeHandler(c.event as CustomEvent)}">Dark mode</fs-checkbox>
   <div>
     <label for="custom-accent-base-color">Pick a custom accent color</label>
     <input
@@ -48,7 +47,5 @@ export const FsLiveConfiguratorTemplate = html<FsLiveConfigurator>`
     )}
   </div>
   <h2>Preview</h2>
-  <div ${ref('preview')}>
-    <fs-preview></fs-preview>
-  </div>
+  <div class="preview" ${ref('preview')}>${PreviewTemplate}</div>
 `;

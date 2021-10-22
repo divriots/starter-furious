@@ -1,21 +1,9 @@
-import {
-  Checkbox,
-  getButton,
-  getCard,
-  getCheckbox,
-  getRadio,
-  getRadioGroup,
-  provideDesignSystem,
-} from '@divriots/starter-furious';
 import { parseColorHexRGB } from '@microsoft/fast-colors';
 import {
-  accentPalette as accentPaletteToken,
-  baseLayerLuminance as baseLayerLuminanceToken,
   fillColor as fillColorToken,
-  neutralForegroundRest as neutralForegroundRestToken,
+  accentPalette as accentPaletteToken,
   neutralPalette as neutralPaletteToken,
   PaletteRGB,
-  StandardLuminance,
   SwatchRGB,
 } from '@microsoft/fast-components';
 import { css, customElement, FASTElement, observable } from '@microsoft/fast-element';
@@ -26,15 +14,16 @@ import { FsLiveConfiguratorTemplate } from './fs-live-configurator.template';
   template: FsLiveConfiguratorTemplate,
   styles: css`
     :host {
-      background-color: ${fillColorToken};
       display: block;
     }
 
-    h2,
-    label {
-      color: ${neutralForegroundRestToken};
+    .preview {
+      background-color: ${fillColorToken};
+      display: block;
+      padding: 2em;
     }
   `,
+  shadowOptions: null,
 })
 class FsLiveConfigurator extends FASTElement {
   preview: HTMLElement;
@@ -50,20 +39,12 @@ class FsLiveConfigurator extends FASTElement {
 
   connectedCallback() {
     super.connectedCallback();
-    provideDesignSystem(this).register(getButton(), getCard(), getCheckbox(), getRadio(), getRadioGroup());
-    this.darkMode = false;
     this.accentBaseColorDefault = accentPaletteToken.getValueFor(this).source.toColorString().toUpperCase();
     this.neutralBaseColorDefault = neutralPaletteToken.getValueFor(this).source.toColorString().toUpperCase();
     this.accentBaseColorOptions = [this.accentBaseColorDefault, '#DA1A5F', '#10A7B5', '#109B82', '#E1A054'];
     this.neutralBaseColorOptions = [this.neutralBaseColorDefault, '#35719F', '#2D5F2D', '#5D437C', '#A35436'];
     this.accentBaseColor = this.accentBaseColorOptions[0];
     this.neutralBaseColor = this.neutralBaseColorOptions[0];
-  }
-
-  darkModeChangeHandler(event: CustomEvent) {
-    if (event.target instanceof Checkbox) {
-      this.darkMode = event.target.checked;
-    }
   }
 
   accentBaseColorChangeHandler(event: CustomEvent) {
@@ -88,13 +69,6 @@ class FsLiveConfigurator extends FASTElement {
     if (event.target instanceof HTMLButtonElement) {
       this.neutralBaseColor = event.target.innerText.replace('(default)', '').trim();
     }
-  }
-
-  @observable
-  private darkMode: boolean;
-  private darkModeChanged() {
-    const luminance = this.darkMode ? StandardLuminance.DarkMode : StandardLuminance.LightMode;
-    baseLayerLuminanceToken.setValueFor(this.preview, luminance);
   }
 
   @observable
