@@ -1,5 +1,4 @@
 import { html, repeat } from '@microsoft/fast-element';
-import { FsPreview } from './fs-preview';
 import * as accordionStories from '~/accordion/stories/accordion.stories';
 import * as anchorStories from '~/anchor/stories/anchor.stories';
 import * as breadcrumbStories from '~/breadcrumb/stories/breadcrumb.stories';
@@ -60,7 +59,7 @@ const stories = [];
   });
 });
 
-export const FsPreviewTemplate = html<FsPreview>`${repeat(
+export const PreviewTemplate = html`${repeat(
   () => stories,
   html`<div style="display: inline-block; padding: 5px;">${(x) => x()}</div>`,
 )}`;
