@@ -1,10 +1,10 @@
-@import 'https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css';
-@import 'https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.4.1/dist/typography.min.css';
-@import 'https://gitcdn.link/repo/PrismJS/prism-themes/master/themes/prism-vsc-dark-plus.css';
+mdjs-layout [slot='logo'] > :first-child {
+  width: auto;
+  height: 3em;
+}
 
 .prose {
-  max-width: 1000px;
-  padding: 30px;
+  max-width: unset;
 }
 
 .prose ol,
@@ -20,6 +20,8 @@
 }
 
 .preview-story .story_padded {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   padding: 15px;
 }
 
@@ -41,7 +43,23 @@
 }
 
 .preview-story pre {
+  border: 0;
   border-radius: 0;
   margin: 0;
   padding: 15px;
+}
+
+mdjs-layout.dark .preview-story,
+mdjs-layout.dark .preview-story details {
+  border-color: #404040;
+}
+
+mdjs-layout.dark .preview-story summary {
+  background-color: #262626;
+}
+
+/* workaround selector specificity issue between Prism theme and tailwind typography */
+.prose .preview-story pre,
+mdjs-layout.dark .prose .preview-story pre {
+  background-color: #1e1e1e;
 }

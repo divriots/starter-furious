@@ -52,7 +52,7 @@
           "tree-view"
         ]
       ],
-      ["infrastructure", ["dockit", "doc-layout"]]
+      ["infrastructure", ["dockit", "doc-layout", "mdjs-layout"]]
     ]
   }
 }
