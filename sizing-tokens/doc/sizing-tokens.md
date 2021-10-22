@@ -45,20 +45,12 @@ class SizingTokensUsage extends FASTElement {
       }
 
       .play-button {
-        background-color: white;
+        background-color: transparent;
         border: 0;
         border-radius: 0;
         border-right: 1px solid black;
         padding: 0 calc((${designUnit} + ${density}) * 3px);
         margin: 0;
-      }
-
-      .play-button:hover {
-        background-color: lightgrey;
-      }
-
-      .play-button:active {
-        background-color: grey;
       }
     `,
     template: html`
