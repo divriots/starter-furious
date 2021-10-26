@@ -1,4 +1,7 @@
-# starter-furious
+[![backlight.dev](https://img.shields.io/badge/Open%20in-Backlight.dev%20editor-%23f8c307)](https://backlight.dev/preview/xS11aQmjMLIvr5PU5Mru)
+[![Github Repo](https://img.shields.io/github/last-commit/divriots/starter-furious)](https://github.com/divriots/starter-furious)
+
+# Furious Starter Kit <br> <small><em>for Backlight</em></small>
 
 `Furious` is a design system based on [FAST Frame](https://www.fast.design/docs/design-systems/fast-frame) created to be a starter-kit for your own design systems. It configures FAST Frame with sensible defaults, makes it ready for your extensions where needed and lays a foundation for your future documentation.
 
