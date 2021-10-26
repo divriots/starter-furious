@@ -125,76 +125,72 @@ import {
   typeRampPlus6LineHeightToken,
 } from './tokens';
 
-export const provideTokens = (childElement?: HTMLElement) => {
-  const setToken = childElement
-    ? <T>(token: DesignToken<T>, value: DesignTokenValue<T> | DesignToken<T>) => token.setValueFor(childElement, value)
-    : <T>(token: DesignToken<T>, value: DesignTokenValue<T> | DesignToken<T>) => token.withDefault(value);
-
+export const provideTokens = (childElement: HTMLElement = document.body) => {
   // color
-  setToken(accentPaletteToken, accentPaletteValue);
-  setToken(neutralPaletteToken, neutralPaletteValue);
-  setToken(baseLayerLuminanceToken, baseLayerLuminanceValue);
-  setToken(accentFillRestDeltaToken, accentFillRestDeltaValue);
-  setToken(accentFillHoverDeltaToken, accentFillHoverDeltaValue);
-  setToken(accentFillActiveDeltaToken, accentFillActiveDeltaValue);
-  setToken(accentFillFocusDeltaToken, accentFillFocusDeltaValue);
-  setToken(accentForegroundRestDeltaToken, accentForegroundRestDeltaValue);
-  setToken(accentForegroundHoverDeltaToken, accentForegroundHoverDeltaValue);
-  setToken(accentForegroundActiveDeltaToken, accentForegroundActiveDeltaValue);
-  setToken(accentForegroundFocusDeltaToken, accentForegroundFocusDeltaValue);
-  setToken(neutralFillRestDeltaToken, neutralFillRestDeltaValue);
-  setToken(neutralFillHoverDeltaToken, neutralFillHoverDeltaValue);
-  setToken(neutralFillActiveDeltaToken, neutralFillActiveDeltaValue);
-  setToken(neutralFillFocusDeltaToken, neutralFillFocusDeltaValue);
-  setToken(neutralFillInputRestDeltaToken, neutralFillInputRestDeltaValue);
-  setToken(neutralFillInputHoverDeltaToken, neutralFillInputHoverDeltaValue);
-  setToken(neutralFillInputActiveDeltaToken, neutralFillInputActiveDeltaValue);
-  setToken(neutralFillInputFocusDeltaToken, neutralFillInputFocusDeltaValue);
-  setToken(neutralFillStealthRestDeltaToken, neutralFillStealthRestDeltaValue);
-  setToken(neutralFillStealthHoverDeltaToken, neutralFillStealthHoverDeltaValue);
-  setToken(neutralFillStealthActiveDeltaToken, neutralFillStealthActiveDeltaValue);
-  setToken(neutralFillStealthFocusDeltaToken, neutralFillStealthFocusDeltaValue);
-  setToken(neutralFillStrongRestDeltaToken, neutralFillStrongRestDeltaValue);
-  setToken(neutralFillStrongHoverDeltaToken, neutralFillStrongHoverDeltaValue);
-  setToken(neutralFillStrongActiveDeltaToken, neutralFillStrongActiveDeltaValue);
-  setToken(neutralFillStrongFocusDeltaToken, neutralFillStrongFocusDeltaValue);
-  setToken(neutralFillLayerRestDeltaToken, neutralFillLayerRestDeltaValue);
-  setToken(neutralStrokeRestDeltaToken, neutralStrokeRestDeltaValue);
-  setToken(neutralStrokeHoverDeltaToken, neutralStrokeHoverDeltaValue);
-  setToken(neutralStrokeActiveDeltaToken, neutralStrokeActiveDeltaValue);
-  setToken(neutralStrokeFocusDeltaToken, neutralStrokeFocusDeltaValue);
-  setToken(neutralStrokeDividerRestDeltaToken, neutralStrokeDividerRestDeltaValue);
+  accentPaletteToken.setValueFor(childElement, accentPaletteValue);
+  neutralPaletteToken.setValueFor(childElement, neutralPaletteValue);
+  baseLayerLuminanceToken.setValueFor(childElement, baseLayerLuminanceValue);
+  accentFillRestDeltaToken.setValueFor(childElement, accentFillRestDeltaValue);
+  accentFillHoverDeltaToken.setValueFor(childElement, accentFillHoverDeltaValue);
+  accentFillActiveDeltaToken.setValueFor(childElement, accentFillActiveDeltaValue);
+  accentFillFocusDeltaToken.setValueFor(childElement, accentFillFocusDeltaValue);
+  accentForegroundRestDeltaToken.setValueFor(childElement, accentForegroundRestDeltaValue);
+  accentForegroundHoverDeltaToken.setValueFor(childElement, accentForegroundHoverDeltaValue);
+  accentForegroundActiveDeltaToken.setValueFor(childElement, accentForegroundActiveDeltaValue);
+  accentForegroundFocusDeltaToken.setValueFor(childElement, accentForegroundFocusDeltaValue);
+  neutralFillRestDeltaToken.setValueFor(childElement, neutralFillRestDeltaValue);
+  neutralFillHoverDeltaToken.setValueFor(childElement, neutralFillHoverDeltaValue);
+  neutralFillActiveDeltaToken.setValueFor(childElement, neutralFillActiveDeltaValue);
+  neutralFillFocusDeltaToken.setValueFor(childElement, neutralFillFocusDeltaValue);
+  neutralFillInputRestDeltaToken.setValueFor(childElement, neutralFillInputRestDeltaValue);
+  neutralFillInputHoverDeltaToken.setValueFor(childElement, neutralFillInputHoverDeltaValue);
+  neutralFillInputActiveDeltaToken.setValueFor(childElement, neutralFillInputActiveDeltaValue);
+  neutralFillInputFocusDeltaToken.setValueFor(childElement, neutralFillInputFocusDeltaValue);
+  neutralFillStealthRestDeltaToken.setValueFor(childElement, neutralFillStealthRestDeltaValue);
+  neutralFillStealthHoverDeltaToken.setValueFor(childElement, neutralFillStealthHoverDeltaValue);
+  neutralFillStealthActiveDeltaToken.setValueFor(childElement, neutralFillStealthActiveDeltaValue);
+  neutralFillStealthFocusDeltaToken.setValueFor(childElement, neutralFillStealthFocusDeltaValue);
+  neutralFillStrongRestDeltaToken.setValueFor(childElement, neutralFillStrongRestDeltaValue);
+  neutralFillStrongHoverDeltaToken.setValueFor(childElement, neutralFillStrongHoverDeltaValue);
+  neutralFillStrongActiveDeltaToken.setValueFor(childElement, neutralFillStrongActiveDeltaValue);
+  neutralFillStrongFocusDeltaToken.setValueFor(childElement, neutralFillStrongFocusDeltaValue);
+  neutralFillLayerRestDeltaToken.setValueFor(childElement, neutralFillLayerRestDeltaValue);
+  neutralStrokeRestDeltaToken.setValueFor(childElement, neutralStrokeRestDeltaValue);
+  neutralStrokeHoverDeltaToken.setValueFor(childElement, neutralStrokeHoverDeltaValue);
+  neutralStrokeActiveDeltaToken.setValueFor(childElement, neutralStrokeActiveDeltaValue);
+  neutralStrokeFocusDeltaToken.setValueFor(childElement, neutralStrokeFocusDeltaValue);
+  neutralStrokeDividerRestDeltaToken.setValueFor(childElement, neutralStrokeDividerRestDeltaValue);
 
   // typography
-  setToken(typeRampBaseFontSizeToken, typeRampBaseFontSizeValue);
-  setToken(typeRampBaseLineHeightToken, typeRampBaseLineHeightValue);
-  setToken(typeRampMinus1FontSizeToken, typeRampMinus1FontSizeValue);
-  setToken(typeRampMinus1LineHeightToken, typeRampMinus1LineHeightValue);
-  setToken(typeRampMinus2FontSizeToken, typeRampMinus2FontSizeValue);
-  setToken(typeRampMinus2LineHeightToken, typeRampMinus2LineHeightValue);
-  setToken(typeRampPlus1FontSizeToken, typeRampPlus1FontSizeValue);
-  setToken(typeRampPlus1LineHeightToken, typeRampPlus1LineHeightValue);
-  setToken(typeRampPlus2FontSizeToken, typeRampPlus2FontSizeValue);
-  setToken(typeRampPlus2LineHeightToken, typeRampPlus2LineHeightValue);
-  setToken(typeRampPlus3FontSizeToken, typeRampPlus3FontSizeValue);
-  setToken(typeRampPlus3LineHeightToken, typeRampPlus3LineHeightValue);
-  setToken(typeRampPlus4FontSizeToken, typeRampPlus4FontSizeValue);
-  setToken(typeRampPlus4LineHeightToken, typeRampPlus4LineHeightValue);
-  setToken(typeRampPlus5FontSizeToken, typeRampPlus5FontSizeValue);
-  setToken(typeRampPlus5LineHeightToken, typeRampPlus5LineHeightValue);
-  setToken(typeRampPlus6FontSizeToken, typeRampPlus6FontSizeValue);
-  setToken(typeRampPlus6LineHeightToken, typeRampPlus6LineHeightValue);
+  typeRampBaseFontSizeToken.setValueFor(childElement, typeRampBaseFontSizeValue);
+  typeRampBaseLineHeightToken.setValueFor(childElement, typeRampBaseLineHeightValue);
+  typeRampMinus1FontSizeToken.setValueFor(childElement, typeRampMinus1FontSizeValue);
+  typeRampMinus1LineHeightToken.setValueFor(childElement, typeRampMinus1LineHeightValue);
+  typeRampMinus2FontSizeToken.setValueFor(childElement, typeRampMinus2FontSizeValue);
+  typeRampMinus2LineHeightToken.setValueFor(childElement, typeRampMinus2LineHeightValue);
+  typeRampPlus1FontSizeToken.setValueFor(childElement, typeRampPlus1FontSizeValue);
+  typeRampPlus1LineHeightToken.setValueFor(childElement, typeRampPlus1LineHeightValue);
+  typeRampPlus2FontSizeToken.setValueFor(childElement, typeRampPlus2FontSizeValue);
+  typeRampPlus2LineHeightToken.setValueFor(childElement, typeRampPlus2LineHeightValue);
+  typeRampPlus3FontSizeToken.setValueFor(childElement, typeRampPlus3FontSizeValue);
+  typeRampPlus3LineHeightToken.setValueFor(childElement, typeRampPlus3LineHeightValue);
+  typeRampPlus4FontSizeToken.setValueFor(childElement, typeRampPlus4FontSizeValue);
+  typeRampPlus4LineHeightToken.setValueFor(childElement, typeRampPlus4LineHeightValue);
+  typeRampPlus5FontSizeToken.setValueFor(childElement, typeRampPlus5FontSizeValue);
+  typeRampPlus5LineHeightToken.setValueFor(childElement, typeRampPlus5LineHeightValue);
+  typeRampPlus6FontSizeToken.setValueFor(childElement, typeRampPlus6FontSizeValue);
+  typeRampPlus6LineHeightToken.setValueFor(childElement, typeRampPlus6LineHeightValue);
 
   // sizing
-  setToken(baseHeightMultiplierToken, baseHeightMultiplierValue);
-  setToken(controlCornerRadiusToken, controlCornerRadiusValue);
-  setToken(densityToken, densityValue);
-  setToken(designUnitToken, designUnitValue);
+  baseHeightMultiplierToken.setValueFor(childElement, baseHeightMultiplierValue);
+  controlCornerRadiusToken.setValueFor(childElement, controlCornerRadiusValue);
+  densityToken.setValueFor(childElement, densityValue);
+  designUnitToken.setValueFor(childElement, designUnitValue);
 
   // misc
-  setToken(bodyFontToken, bodyFontValue);
-  setToken(directionToken, directionValue);
-  setToken(disabledOpacityToken, disabledOpacityValue);
-  setToken(strokeWidthToken, strokeWidthValue);
-  setToken(focusStrokeWidthToken, focusStrokeWidthValue);
+  bodyFontToken.setValueFor(childElement, bodyFontValue);
+  directionToken.setValueFor(childElement, directionValue);
+  disabledOpacityToken.setValueFor(childElement, disabledOpacityValue);
+  strokeWidthToken.setValueFor(childElement, strokeWidthValue);
+  focusStrokeWidthToken.setValueFor(childElement, focusStrokeWidthValue);
 };
