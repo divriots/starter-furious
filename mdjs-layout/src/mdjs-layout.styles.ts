@@ -4,6 +4,8 @@ export const mdjsLayoutStyles = css`
   :host {
     display: block;
     background-color: white;
+    min-width: 100vw;
+    min-height: 100vh;
   }
 
   :host(.dark) {
