@@ -4,7 +4,6 @@ export const mdjsLayoutStyles = css`
   :host {
     display: block;
     background-color: white;
-    min-width: 100vw;
     min-height: 100vh;
   }
 
@@ -70,7 +69,7 @@ export const mdjsLayoutStyles = css`
 
   .navigation {
     padding: 1rem;
-    width: 250px;
+    width: 200px;
   }
 
   @media screen and (max-width: 1049px) {
@@ -78,7 +77,6 @@ export const mdjsLayoutStyles = css`
       display: block;
       background-color: rgba(0, 0, 0, 0.5);
       position: fixed;
-      overflow: scroll;
       top: 0;
       left: 0;
       bottom: 0;
@@ -88,6 +86,8 @@ export const mdjsLayoutStyles = css`
 
     .navigation-wrapper--mobile-show .navigation {
       background-color: white;
+      height: 100vh;
+      overflow-y: scroll;
     }
 
     :host(.dark) .navigation-wrapper--mobile-show .navigation {
@@ -154,8 +154,14 @@ export const mdjsLayoutStyles = css`
 
   .content-wrapper {
     flex-grow: 1;
-    max-width: min(800px, 100vw);
+    max-width: 100%;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 850px) {
+    .content-wrapper {
+      max-width: 800px;
+    }
   }
 
   .content {
