@@ -21,8 +21,8 @@ export const mdjsLayoutStyles = css`
 
   .color-scheme-toggle,
   .navigation-toggle {
-    background-color: #d1d5db60;
-    color: black;
+    background-color: #737373;
+    color: white;
     cursor: pointer;
     font-size: 1.5rem;
     font-family: inherit;
@@ -52,10 +52,6 @@ export const mdjsLayoutStyles = css`
 
   .navigation-toggle {
     right: 1rem;
-  }
-
-  :host(.dark) .navigation-toggle {
-    color: white;
   }
 
   @media screen and (min-width: 1050px) {
