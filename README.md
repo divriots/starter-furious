@@ -1,4 +1,3 @@
-@@ -1,36 +0,0 @@
 [![backlight.dev](https://img.shields.io/badge/Open%20in-Backlight.dev%20editor-%23f8c307)](https://backlight.dev/preview/xS11aQmjMLIvr5PU5Mru)
 [![Github Repo](https://img.shields.io/github/last-commit/divriots/starter-furious)](https://github.com/divriots/starter-furious)
 
