@@ -26,7 +26,6 @@ export const mdjsLayoutTemplate = (component: MdjsLayout) => html`
       class="navigation-wrapper ${component.isNavigationShown ? 'navigation-wrapper--mobile-show' : ''}"
       @click="${component.hideNavigation}"
     >
-      <div></div>
       <nav class="navigation prose dark:prose-light">
         <ul>
           ${component.context.pagesGraph
