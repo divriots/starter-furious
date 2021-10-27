@@ -2,6 +2,10 @@
 */doc/
 */stories/
 doc-layout/
+dockit/
 live-configurator/
+mdjs-layout/
+mdjs.config.js
 studio.config.json
+tailwind.config.js
 tsconfig.json
