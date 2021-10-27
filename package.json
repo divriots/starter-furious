@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "@microsoft/fast-colors": "^5.1.3",
-    "@microsoft/fast-components": "^2.13.1",
+    "@microsoft/fast-components": "^2.14.2",
     "@microsoft/fast-element": "^1.6.1",
-    "@microsoft/fast-foundation": "^2.21.0",
+    "@microsoft/fast-foundation": "^2.23.1",
     "@microsoft/fast-web-utilities": "^5.0.1"
   },
   "devDependencies": {
