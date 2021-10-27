@@ -5,7 +5,7 @@ doc-layout/
 dockit/
 live-configurator/
 mdjs-layout/
-mdjs.config.js
+mdjs.config.*
 studio.config.json
-tailwind.config.js
+tailwind.config.*
 tsconfig.json
