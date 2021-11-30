@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-accordion",
+      "description": "The accordion element",
+      "attributes": [
+        {
+          "name": "expand-mode",
+          "description": "The way items are allowed to expand",
+          "values": [{ "name": "single" }, { "name": "multi" }]
+        }
+      ]
+    }
+  ]
+}

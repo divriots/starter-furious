@@ -1,0 +1,15 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-listbox",
+      "description": "The listbox element",
+      "attributes": [
+        { "name": "role", "description": "The ARIA role for the listbox", "values": [{ "name": "listbox" }] },
+        { "name": "disabled", "description": "Sets the disabled state of the listbox" },
+        { "name": "size", "description": "The maximum number of visible options" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-radio",
+      "description": "The radio element",
+      "attributes": [
+        { "name": "checked", "description": "Whether or not this radio is checked by default" },
+        {
+          "name": "name",
+          "description": "This element's value will be surfaced during form submission under the provided name"
+        },
+        { "name": "required", "description": "Require the field to be completed prior to form submission" },
+        { "name": "disabled", "description": "Sets the disabled state of the radio" },
+        { "name": "readonly", "description": "When true, the control will be immutable by user interaction" }
+      ]
+    }
+  ]
+}

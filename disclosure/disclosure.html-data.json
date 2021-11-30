@@ -1,0 +1,22 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-disclosure",
+      "description": "The disclosure element",
+      "attributes": [
+        { "name": "expanded", "description": "Determines the visibility of the additional content" },
+        {
+          "name": "title",
+          "description": "Default slotted content of the button which toggles the visbility of the additional disclosure content"
+        },
+        {
+          "name": "appearance",
+          "description": "The disclosure's visual treatment",
+          "values": [{ "name": "accent" }, { "name": "lightweight" }]
+        }
+      ]
+    }
+  ]
+}

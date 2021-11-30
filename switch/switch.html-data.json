@@ -1,0 +1,20 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-switch",
+      "description": "The switch element",
+      "attributes": [
+        { "name": "checked", "description": "Provides the default checked value" },
+        {
+          "name": "name",
+          "description": "This element's value will be surfaced during form submission under the provided name"
+        },
+        { "name": "required", "description": "Require the field to be completed prior to form submission" },
+        { "name": "disabled", "description": "Sets the disabled state of the switch" },
+        { "name": "readonly", "description": "When true, the control will be immutable by user interaction" }
+      ]
+    }
+  ]
+}

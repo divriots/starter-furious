@@ -1,0 +1,14 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-breadcrumb-item",
+      "description": "The breadcrumb item element",
+      "attributes": [
+        { "name": "href", "description": "The URL the item points to" },
+        { "name": "separator", "description": "Determines whether the visual separator should be rendered" }
+      ]
+    }
+  ]
+}

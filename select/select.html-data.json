@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-select",
+      "description": "The select element",
+      "attributes": [
+        { "name": "disabled", "description": "Sets the disabled state of the select" },
+        {
+          "name": "name",
+          "description": "This element's value will be surfaced during form submission under the provided name"
+        }
+      ]
+    }
+  ]
+}

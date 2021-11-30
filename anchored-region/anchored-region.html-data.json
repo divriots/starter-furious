@@ -1,0 +1,84 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-anchored-region",
+      "description": "The anchored region element",
+      "attributes": [
+        { "name": "anchor", "description": "The HTML ID of the element the region is positioned relative to" },
+        { "name": "viewport", "description": "The HTML ID of the viewport the region is positioned relative to" },
+        {
+          "name": "horizontal-positioning-mode",
+          "description": "How the horizontal placement is determined",
+          "values": [{ "name": "uncontrolled" }, { "name": "locktodefault" }, { "name": "dynamic" }]
+        },
+        {
+          "name": "horizontal-default-position",
+          "description": "The default horizontal position of the region relative to the configured 'Anchor ID'",
+          "values": [
+            { "name": "start" },
+            { "name": "end" },
+            { "name": "left" },
+            { "name": "right" },
+            { "name": "unset" },
+            { "name": "center" }
+          ]
+        },
+        {
+          "name": "horizontal-inset",
+          "description": "Determines whether the region should overlap the anchor on the horizontal axis"
+        },
+        {
+          "name": "horizontal-viewport-lock",
+          "description": "Determines whether the region remains in the viewport (ie. detaches from the anchor) on the horizontal axis"
+        },
+        {
+          "name": "horizontal-threshold",
+          "description": "The space allocated to the default position before the widest area is selected for layout"
+        },
+        {
+          "name": "horizontal-scaling",
+          "description": "Defines how the width of the region is calculated",
+          "values": [{ "name": "anchor" }, { "name": "fill" }, { "name": "content" }]
+        },
+        {
+          "name": "vertical-positioning-mode",
+          "description": "How the vertical placement is determined",
+          "values": [{ "name": "uncontrolled" }, { "name": "locktodefault" }, { "name": "dynamic" }]
+        },
+        {
+          "name": "vertical-default-position",
+          "description": "The default vertical position of the region relative to the configured 'Anchor ID'",
+          "values": [{ "name": "top" }, { "name": "bottom" }, { "name": "unset" }, { "name": "center" }]
+        },
+        {
+          "name": "vertical-inset",
+          "description": "Determines whether the region should overlap the anchor on the vertical axis"
+        },
+        {
+          "name": "vertical-viewport-lock",
+          "description": "Determines whether the region remains in the viewport (ie. detaches from the anchor) on the vertical axis"
+        },
+        {
+          "name": "vertical-threshold",
+          "description": "The space allocated to the default position before the widest area is selected for layout"
+        },
+        {
+          "name": "vertical-scaling",
+          "description": "Defines how the width of the region is calculated",
+          "values": [{ "name": "anchor" }, { "name": "fill" }, { "name": "content" }]
+        },
+        {
+          "name": "fixed-placement",
+          "description": "Fixed placement allows the region to break out of parent containers"
+        },
+        {
+          "name": "auto-update-mode",
+          "description": "Defines whether the component automatically updates its position",
+          "values": [{ "name": "anchor" }, { "name": "auto" }]
+        }
+      ]
+    }
+  ]
+}

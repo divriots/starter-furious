@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-toolbar",
+      "description": "The toolbar element",
+      "attributes": [
+        {
+          "name": "orientation",
+          "description": "The orientation of the toolbar",
+          "values": [{ "name": "horizontal" }, { "name": "vertical" }]
+        }
+      ]
+    }
+  ]
+}
