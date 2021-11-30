@@ -1,0 +1,45 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-text-area",
+      "description": "The text-area element",
+      "attributes": [
+        {
+          "name": "appearance",
+          "description": "The text area's visual treatment",
+          "values": [{ "name": "outline" }, { "name": "filled" }]
+        },
+        {
+          "name": "resize",
+          "description": "The resize mode of the element",
+          "values": [{ "name": "none" }, { "name": "both" }, { "name": "horizontal" }, { "name": "vertical" }]
+        },
+        { "name": "autofocus", "description": "Determines if the element should receive document focus on page load" },
+        { "name": "cols", "description": "Sizes the element vertically by a number of character columns" },
+        { "name": "form", "description": "The form attribute" },
+        { "name": "list", "description": "Allows associating a datalist to the component" },
+        { "name": "maxlength", "description": "The maximum number of characters a user can enter" },
+        { "name": "minlength", "description": "The minimum number of characters a user can enter" },
+        {
+          "name": "placeholder",
+          "description": "Sets the placeholder value of the element, generally used to provide a hint to the user"
+        },
+        { "name": "rows", "description": "Sizes the element vertically by a number of character rows" },
+        {
+          "name": "spellcheck",
+          "description": "Controls whether or not to enable spell checking for the input field, or if the default spell checking configuration should be used"
+        },
+        { "name": "value", "description": "The HTML value attribute of the text area" },
+        {
+          "name": "name",
+          "description": "This element's value will be surfaced during form submission under the provided name"
+        },
+        { "name": "required", "description": "Require the field to be completed prior to form submission" },
+        { "name": "disabled", "description": "Sets the disabled state of the text area" },
+        { "name": "readonly", "description": "When true, the control will be immutable by user interaction" }
+      ]
+    }
+  ]
+}

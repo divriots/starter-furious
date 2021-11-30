@@ -1,0 +1,18 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-slider-label",
+      "description": "The slider-label element",
+      "attributes": [
+        { "name": "hide-mark", "description": "Hides the tick mark" },
+        { "name": "disabled", "description": "Sets the disabled state of the label" },
+        {
+          "name": "position",
+          "description": "The position of the label relative to the min and max value of the parent"
+        }
+      ]
+    }
+  ]
+}

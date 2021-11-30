@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-tree-view",
+      "description": "The tree view element",
+      "attributes": [
+        {
+          "name": "render-collapsed-nodes",
+          "description": "Determines whether the tree should render nodes under collapsed items"
+        }
+      ]
+    }
+  ]
+}

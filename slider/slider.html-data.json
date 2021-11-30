@@ -1,0 +1,28 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-slider",
+      "description": "The slider element",
+      "attributes": [
+        { "name": "value", "description": "The slider value" },
+        { "name": "max", "description": "The maximum value" },
+        { "name": "min", "description": "The minimum value" },
+        { "name": "step", "description": "Amount to increment or decrement the value by" },
+        {
+          "name": "orientation",
+          "description": "The orientation of the slider",
+          "values": [{ "name": "horizontal" }, { "name": "vertical" }]
+        },
+        {
+          "name": "name",
+          "description": "This element's value will be surfaced during form submission under the provided name"
+        },
+        { "name": "required", "description": "Require the field to be completed prior to form submission" },
+        { "name": "disabled", "description": "Sets the disabled state of the slider" },
+        { "name": "readonly", "description": "When true, the control will be immutable by user interaction" }
+      ]
+    }
+  ]
+}

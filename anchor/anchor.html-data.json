@@ -1,0 +1,49 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-anchor",
+      "description": "The anchor element",
+      "attributes": [
+        {
+          "name": "appearance",
+          "description": "The anchor's visual treatment",
+          "values": [
+            { "name": "accent" },
+            { "name": "lightweight" },
+            { "name": "neutral" },
+            { "name": "outline" },
+            { "name": "stealth" },
+            { "name": "hypertext" }
+          ]
+        },
+        { "name": "download", "description": "The HTML download attribute of the anchor" },
+        { "name": "href", "description": "The URL the anchor points to" },
+        { "name": "hreflang", "description": "The language of the URL the anchor points to" },
+        { "name": "ping", "description": "A space-separated list of URLs typically for tracking" },
+        {
+          "name": "referrerpolicy",
+          "description": "The amount of referrer information that should be included with requests",
+          "values": [
+            { "name": "no-referrer" },
+            { "name": "no-referrer-when-downgrade" },
+            { "name": "origin" },
+            { "name": "origin-when-cross-origin" },
+            { "name": "same-origin" },
+            { "name": "strict-origin" },
+            { "name": "strict-origin-when-cross-origin" },
+            { "name": "unsafe-url" }
+          ]
+        },
+        { "name": "rel", "description": "Space-separated link types indicating the relationship of the linked URL" },
+        {
+          "name": "target",
+          "description": "The display target of the URL",
+          "values": [{ "name": "_self" }, { "name": "_blank" }, { "name": "_parent" }, { "name": "_top" }]
+        },
+        { "name": "type", "description": "The linked URL's format using a MIME type" }
+      ]
+    }
+  ]
+}

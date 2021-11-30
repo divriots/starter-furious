@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-data-grid",
+      "description": "The data grid element",
+      "attributes": [
+        {
+          "name": "generate-header",
+          "description": "Whether the grid should auto generate a header row",
+          "values": [{ "name": "none" }, { "name": "default" }, { "name": "sticky" }]
+        },
+        {
+          "name": "grid-template-columns",
+          "description": "Value that gets applied to the the css gridTemplateColumns attribute of child rows"
+        }
+      ]
+    }
+  ]
+}

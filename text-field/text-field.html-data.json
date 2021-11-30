@@ -1,0 +1,50 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-text-field",
+      "description": "The text-field element",
+      "attributes": [
+        { "name": "value", "description": "The HTML value attribute of the text field" },
+        {
+          "name": "appearance",
+          "description": "The text field's visual treatment",
+          "values": [{ "name": "outline" }, { "name": "filled" }]
+        },
+        { "name": "autofocus", "description": "Determines if the element should receive document focus on page load" },
+        {
+          "name": "placeholder",
+          "description": "Sets the placeholder value of the element, generally used to provide a hint to the user"
+        },
+        {
+          "name": "type",
+          "description": "Specifies the type of text input for the field",
+          "values": [
+            { "name": "email" },
+            { "name": "password" },
+            { "name": "tel" },
+            { "name": "text" },
+            { "name": "url" }
+          ]
+        },
+        { "name": "list", "description": "Allows associating a datalist to the component" },
+        { "name": "maxlength", "description": "The maximum number of characters a user can enter" },
+        { "name": "minlength", "description": "The minimum number of characters a user can enter" },
+        { "name": "pattern", "description": "A regular expression that the value must match to pass validation" },
+        { "name": "size", "description": "Sets the width of the element to a specified number of characters" },
+        {
+          "name": "spellcheck",
+          "description": "Controls whether or not to enable spell checking for the input field, or if the default spell checking configuration should be used"
+        },
+        {
+          "name": "name",
+          "description": "This element's value will be surfaced during form submission under the provided name"
+        },
+        { "name": "required", "description": "Require the field to be completed prior to form submission" },
+        { "name": "disabled", "description": "Sets the disabled state of the number field" },
+        { "name": "readonly", "description": "When true, the control will be immutable by user interaction" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-button",
+      "description": "The button element",
+      "attributes": [
+        {
+          "name": "appearance",
+          "description": "The button's visual treatment",
+          "values": [
+            { "name": "accent" },
+            { "name": "lightweight" },
+            { "name": "neutral" },
+            { "name": "outline" },
+            { "name": "stealth" }
+          ]
+        },
+        { "name": "autofocus", "description": "Determines if the element should receive document focus on page load" },
+        { "name": "disabled", "description": "Sets the disabled state of the button" },
+        { "name": "form", "description": "The ID of a form to associate the element to" },
+        { "name": "formaction", "description": "The HTML formaction attribute of the button" },
+        { "name": "formenctype", "description": "The HTML formenctype attribute of the button" },
+        {
+          "name": "formmethod",
+          "description": "The HTML formmethod attribute of the button",
+          "values": [{ "name": "post" }, { "name": "get" }]
+        },
+        { "name": "formnovalidate", "description": "The HTML formnovalidate attribute of the button" },
+        {
+          "name": "formtarget",
+          "description": "The HTML formtarget attribute of the button",
+          "values": [{ "name": "_self" }, { "name": "_blank" }, { "name": "_parent" }, { "name": "_top" }]
+        },
+        { "name": "name", "description": "The HTML name attribute of the button" },
+        {
+          "name": "type",
+          "description": "The HTML type attribute of the button",
+          "values": [{ "name": "submit" }, { "name": "reset" }, { "name": "button" }]
+        },
+        { "name": "value", "description": "The HTML value attribute of the button" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-divider",
+      "description": "The divider element",
+      "attributes": [
+        {
+          "name": "role",
+          "description": "The ARIA role for the divider",
+          "values": [{ "name": "separator" }, { "name": "presentation" }]
+        }
+      ]
+    }
+  ]
+}

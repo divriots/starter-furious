@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-avatar",
+      "description": "The avatar element",
+      "attributes": [
+        { "name": "fill", "description": "The fill attribute" },
+        { "name": "color", "description": "The color attribute" },
+        { "name": "alt", "description": "The alt attribute" },
+        { "name": "link", "description": "The link attribute" },
+        { "name": "shape", "description": "The shape attribute" }
+      ]
+    }
+  ]
+}

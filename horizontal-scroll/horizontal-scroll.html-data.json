@@ -1,0 +1,27 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-horizontal-scroll",
+      "description": "The HorizontalScroll element",
+      "attributes": [
+        {
+          "name": "view",
+          "description": "Default or mobile view",
+          "values": [{ "name": "mobile" }, { "name": "default" }]
+        },
+        { "name": "speed", "description": "Scroll speed in pixels per second" },
+        {
+          "name": "duration",
+          "description": "Transition duration in seconds or milliseconds. If present, overrides the `speed` attribute."
+        },
+        {
+          "name": "easing",
+          "description": "Scroll easing",
+          "values": [{ "name": "linear" }, { "name": "ease-in" }, { "name": "ease-out" }, { "name": "ease-in-out" }]
+        }
+      ]
+    }
+  ]
+}

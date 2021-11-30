@@ -1,0 +1,22 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-flipper",
+      "description": "The flipper element",
+      "attributes": [
+        { "name": "disabled", "description": "Sets the disabled state of the flipper" },
+        {
+          "name": "aria-hidden",
+          "description": "Flippers are often a duplicate method of navigation, so by default they are hidden from assistive technology (AT). When set to true, the element is exposed to AT"
+        },
+        {
+          "name": "direction",
+          "description": "The navigation direction of the flipper",
+          "values": [{ "name": "previous" }, { "name": "next" }]
+        }
+      ]
+    }
+  ]
+}

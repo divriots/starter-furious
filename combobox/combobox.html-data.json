@@ -1,0 +1,32 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-combobox",
+      "description": "The combobox element",
+      "attributes": [
+        {
+          "name": "autocomplete",
+          "description": "Sets the autocomplete method to use when the combobox receives user input",
+          "values": [{ "name": "inline" }, { "name": "list" }, { "name": "both" }, { "name": "none" }]
+        },
+        { "name": "disabled", "description": "Sets the disabled state of the combobox" },
+        {
+          "name": "name",
+          "description": "This element's value will be surfaced during form submission under the provided name"
+        },
+        {
+          "name": "position",
+          "description": "Controls the placement of the combobox dropdown",
+          "values": [{ "name": "above" }, { "name": "below" }]
+        },
+        {
+          "name": "placeholder",
+          "description": "Sets the placeholder value of the combobox to provide a hint to the user"
+        },
+        { "name": "value", "description": "The initial value of the combobox" }
+      ]
+    }
+  ]
+}

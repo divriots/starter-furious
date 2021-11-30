@@ -1,0 +1,18 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-data-grid-cell",
+      "description": "The data grid cell element",
+      "attributes": [
+        {
+          "name": "cell-type",
+          "description": "The type of cell",
+          "values": [{ "name": "default" }, { "name": "columnheader" }, { "name": "rowheader" }]
+        },
+        { "name": "grid-column", "description": "Positions the cell in the column layout." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-tree-item",
+      "description": "The tree item element",
+      "attributes": [
+        { "name": "expanded", "description": "Whether tree item is expanded or not" },
+        { "name": "selected", "description": "Whether tree item is selected or not" },
+        { "name": "disabled", "description": "Sets the disabled state of the tree item" }
+      ]
+    }
+  ]
+}

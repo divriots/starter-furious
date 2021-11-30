@@ -1,0 +1,14 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-option",
+      "description": "The option element",
+      "attributes": [
+        { "name": "disabled", "description": "Sets the disabled state of the option" },
+        { "name": "selected", "description": "The selected state of the option" }
+      ]
+    }
+  ]
+}

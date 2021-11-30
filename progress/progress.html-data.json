@@ -1,0 +1,19 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-progress",
+      "description": "The progress element",
+      "attributes": [
+        {
+          "name": "value",
+          "description": "Value between 1 and 100 to represent the progress visually and to assistive technologies"
+        },
+        { "name": "min", "description": "The minimum value" },
+        { "name": "max", "description": "The maximum value" },
+        { "name": "paused", "description": "Sets the paused state of the progress component" }
+      ]
+    }
+  ]
+}

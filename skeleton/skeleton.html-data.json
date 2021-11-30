@@ -1,0 +1,23 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-skeleton",
+      "description": "The skeleton element",
+      "attributes": [
+        { "name": "fill", "description": "Indicates the Skeleton should have a filled style" },
+        {
+          "name": "shape",
+          "description": "The shape of the Skeleton",
+          "values": [{ "name": "rect" }, { "name": "circle" }]
+        },
+        {
+          "name": "pattern",
+          "description": "Allows a reference to a hosted asset to be used rather than an inline SVG"
+        },
+        { "name": "shimmer", "description": "Indicates that the component has an activated shimmer effect" }
+      ]
+    }
+  ]
+}

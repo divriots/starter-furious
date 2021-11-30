@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/vscode-html-languageservice@4.2.0/docs/customData.schema.json",
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "fs-dialog",
+      "description": "The dialog element",
+      "attributes": [
+        {
+          "name": "modal",
+          "description": "When modal, user interaction will be limited to the contents of the element"
+        },
+        { "name": "hidden", "description": "The hidden state of the element" },
+        { "name": "trap-focus", "description": "Indicates that the dialog should trap focus" },
+        { "name": "aria-describedby", "description": "The HTML aria-describedby attribute" },
+        { "name": "aria-labelledby", "description": "The HTML aria-labelledby attribute" },
+        { "name": "aria-label", "description": "The HTML aria-label attribute" }
+      ]
+    }
+  ]
+}
