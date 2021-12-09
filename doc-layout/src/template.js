@@ -8,6 +8,9 @@ provideDesignSystem().register();
 
 export const docLayoutTemplate = (content, context) => html`
   <style>
+    .logo {
+      color: #d13400;
+    }
     .preview-story .story_padded {
       background-color: ${fillColor.createCSS()};
     }
@@ -22,7 +25,7 @@ export const docLayoutTemplate = (content, context) => html`
       }
     }}"
   >
-    <div slot="logo">${logoSvg}</div>
+    <div class="logo" slot="logo">${logoSvg}</div>
     <div class="prose dark:prose-light" :innerHTML="${() => content}"></div>
   </mdjs-layout>
 `;
