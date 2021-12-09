@@ -53,7 +53,7 @@
         ]
       ],
       ["foundation", ["core"]],
-      ["infrastructure", ["dockit", "doc-layout", "mdjs-layout"]]
+      ["infrastructure", ["dockit", "doc-layout"]]
     ]
   }
 }
