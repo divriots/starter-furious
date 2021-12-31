@@ -29,6 +29,6 @@ export const docLayoutTemplate = (content, context) => html`
     }}"
   >
     <div class="logo" slot="logo" aria-label="starter-furious">${logoSvg}</div>
-    <div class="prose dark:prose-dark" :innerHTML="${() => content}"></div>
+    <div class="prose dark:prose-invert" :innerHTML="${() => content}"></div>
   </mdjs-layout>
 `;
