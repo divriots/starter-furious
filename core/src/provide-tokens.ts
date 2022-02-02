@@ -1,4 +1,5 @@
 import {
+  accentColorValue,
   accentFillActiveDeltaValue,
   accentFillFocusDeltaValue,
   accentFillHoverDeltaValue,
@@ -7,8 +8,8 @@ import {
   accentForegroundFocusDeltaValue,
   accentForegroundHoverDeltaValue,
   accentForegroundRestDeltaValue,
-  accentPaletteValue,
   baseLayerLuminanceValue,
+  neutralColorValue,
   neutralFillActiveDeltaValue,
   neutralFillFocusDeltaValue,
   neutralFillHoverDeltaValue,
@@ -26,7 +27,6 @@ import {
   neutralFillStrongFocusDeltaValue,
   neutralFillStrongHoverDeltaValue,
   neutralFillStrongRestDeltaValue,
-  neutralPaletteValue,
   neutralStrokeActiveDeltaValue,
   neutralStrokeDividerRestDeltaValue,
   neutralStrokeFocusDeltaValue,
@@ -62,6 +62,7 @@ import {
   typeRampPlus6LineHeightValue,
 } from '~/typography-tokens';
 import {
+  accentColorToken,
   accentFillActiveDeltaToken,
   accentFillFocusDeltaToken,
   accentFillHoverDeltaToken,
@@ -70,7 +71,6 @@ import {
   accentForegroundFocusDeltaToken,
   accentForegroundHoverDeltaToken,
   accentForegroundRestDeltaToken,
-  accentPaletteToken,
   baseHeightMultiplierToken,
   baseLayerLuminanceToken,
   bodyFontToken,
@@ -80,6 +80,7 @@ import {
   directionToken,
   disabledOpacityToken,
   focusStrokeWidthToken,
+  neutralColorToken,
   neutralFillActiveDeltaToken,
   neutralFillFocusDeltaToken,
   neutralFillHoverDeltaToken,
@@ -97,7 +98,6 @@ import {
   neutralFillStrongFocusDeltaToken,
   neutralFillStrongHoverDeltaToken,
   neutralFillStrongRestDeltaToken,
-  neutralPaletteToken,
   neutralStrokeActiveDeltaToken,
   neutralStrokeDividerRestDeltaToken,
   neutralStrokeFocusDeltaToken,
@@ -126,8 +126,8 @@ import {
 
 export const provideTokens = (childElement: HTMLElement = document.body) => {
   // color
-  accentPaletteToken.setValueFor(childElement, accentPaletteValue);
-  neutralPaletteToken.setValueFor(childElement, neutralPaletteValue);
+  accentColorToken.setValueFor(childElement, accentColorValue);
+  neutralColorToken.setValueFor(childElement, neutralColorValue);
   baseLayerLuminanceToken.setValueFor(childElement, baseLayerLuminanceValue);
   accentFillRestDeltaToken.setValueFor(childElement, accentFillRestDeltaValue);
   accentFillHoverDeltaToken.setValueFor(childElement, accentFillHoverDeltaValue);
