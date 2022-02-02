@@ -1,4 +1,3 @@
-import { DesignToken, DesignTokenValue } from '@microsoft/fast-foundation';
 import {
   accentFillActiveDeltaValue,
   accentFillFocusDeltaValue,
