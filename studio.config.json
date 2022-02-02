@@ -2,7 +2,7 @@
   "packages": {
     "dir": "",
     "menu": [
-      ["introduction", ["introduction"]],
+      "introduction",
       ["tokens", ["color-tokens", "typography-tokens", "sizing-tokens", "misc-tokens", "live-configurator"]],
       [
         "components",
