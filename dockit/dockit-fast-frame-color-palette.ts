@@ -46,9 +46,6 @@ class DockitFastFrameColorPalette extends FASTElement {
         },
         this,
       );
-      // the subscription is not working if the value is not retrieved at least once
-      const palette = paletteToken.getValueFor(this);
-      this.swatches = [...palette.swatches];
     }
   }
 }
