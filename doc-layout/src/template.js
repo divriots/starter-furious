@@ -3,8 +3,9 @@ import { styles } from '@divriots/dockit-core/layout';
 import { setupSpeedyLinks } from '@divriots/dockit-core/speedy-links';
 import { baseLayerLuminance, fillColor, provideDesignSystem } from '@divriots/starter-furious';
 import { StandardLuminance } from '@microsoft/fast-components';
-import { html } from '@microsoft/fast-element';
-import { logoSvg } from './logo.svg';
+import { html } from 'lit';
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';
+import { logoSvg } from './logo.svg.js';
 
 provideDesignSystem().register();
 
@@ -24,9 +25,9 @@ export const docLayoutTemplate = (content, context) => {
       }
     </style>
     <dockit-layout
-      :context="${() => context}"
-      @color-scheme-change="${(_, c) => {
-        if (c.event.detail.colorScheme === 'dark') {
+      .context="${context}"
+      @color-scheme-change="${(event) => {
+        if (event.detail.colorScheme === 'dark') {
           document.documentElement.classList.add('dark');
           baseLayerLuminance.setValueFor(document.body, StandardLuminance.DarkMode);
         } else {
@@ -36,7 +37,7 @@ export const docLayoutTemplate = (content, context) => {
       }}"
     >
       <div class="logo" slot="logo" aria-label="starter-furious">${logoSvg}</div>
-      <div class="prose dark:prose-invert" :innerHTML="${() => content}"></div>
+      <div class="prose dark:prose-invert">${unsafeHTML(content)}</div>
     </dockit-layout>
   `;
 };
