@@ -1,4 +1,4 @@
-import { html } from '@microsoft/fast-element';
+import { html } from 'lit';
 
 export const logoSvg = html`
   <svg viewBox="0 0 503.75934 190.7" width="503.75934" height="190.7">
