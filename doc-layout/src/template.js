@@ -5,7 +5,7 @@ import { baseLayerLuminance, fillColor, provideDesignSystem } from '@divriots/st
 import { StandardLuminance } from '@microsoft/fast-components';
 import { html } from 'lit';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
-import { logoSvg } from './logo.svg.js';
+import logoSvg from './logo.svg?raw';
 
 provideDesignSystem().register();
 
@@ -36,7 +36,7 @@ export const docLayoutTemplate = (content, context) => {
         }
       }}"
     >
-      <div class="logo" slot="logo" aria-label="starter-furious">${logoSvg}</div>
+      <div class="logo" slot="logo" aria-label="starter-furious">${unsafeHTML(logoSvg)}</div>
       <div class="prose dark:prose-invert">${unsafeHTML(content)}</div>
     </dockit-layout>
   `;
