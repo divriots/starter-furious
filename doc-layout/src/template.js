@@ -1,5 +1,5 @@
-import '@divriots/dockit-core/mdjs-layout/define';
-import { styles } from '@divriots/dockit-core/mdjs-layout';
+import '@divriots/dockit-core/layout/dockit-layout.define.js';
+import { styles } from '@divriots/dockit-core/layout';
 import { baseLayerLuminance, fillColor, provideDesignSystem } from '@divriots/starter-furious';
 import { StandardLuminance } from '@microsoft/fast-components';
 import { html } from '@microsoft/fast-element';
@@ -16,7 +16,7 @@ export const docLayoutTemplate = (content, context) => html`
       background-color: ${fillColor.createCSS()};
     }
   </style>
-  <mdjs-layout
+  <dockit-layout
     :context="${() => context}"
     @color-scheme-change="${(_, c) => {
       if (c.event.detail.colorScheme === 'dark') {
@@ -30,5 +30,5 @@ export const docLayoutTemplate = (content, context) => html`
   >
     <div class="logo" slot="logo" aria-label="starter-furious">${logoSvg}</div>
     <div class="prose dark:prose-invert" :innerHTML="${() => content}"></div>
-  </mdjs-layout>
+  </dockit-layout>
 `;
