@@ -19,7 +19,7 @@
     "@microsoft/fast-web-utilities": "^5.1.0"
   },
   "devDependencies": {
-    "@divriots/dockit-core": "^0.7.3",
+    "@divriots/dockit-core": "^0.7.4",
     "lit": "^2.2.1",
     "prettier": "^2.5.1"
   }
