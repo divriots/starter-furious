@@ -1,5 +1,6 @@
 import '@divriots/dockit-core/layout/dockit-layout.define.js';
 import { styles } from '@divriots/dockit-core/layout';
+import { setupSpeedyLinks } from '@divriots/dockit-core/speedy-links';
 import { baseLayerLuminance, fillColor, provideDesignSystem } from '@divriots/starter-furious';
 import { StandardLuminance } from '@microsoft/fast-components';
 import { html } from '@microsoft/fast-element';
@@ -8,6 +9,11 @@ import { logoSvg } from './logo.svg';
 provideDesignSystem().register();
 
 export const docLayoutTemplate = (content, context) => {
+  setupSpeedyLinks({
+    mapLinkUrlToModuleUrl: (url) => {
+      return context.mapPageUrlToRenderModuleUrl(url);
+    },
+  });
   return html`
     <style>
       ${styles} .logo {
