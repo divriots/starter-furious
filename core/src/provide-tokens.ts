@@ -124,7 +124,7 @@ import {
   typeRampPlus6LineHeightToken,
 } from './tokens';
 
-export const provideTokens = (childElement: HTMLElement = document.body) => {
+export const provideTokens = (childElement: HTMLElement) => {
   // color
   accentColorToken.setValueFor(childElement, accentColorValue);
   neutralColorToken.setValueFor(childElement, neutralColorValue);

@@ -1,9 +1,14 @@
 import { DesignSystem } from '@microsoft/fast-foundation';
 import { provideTokens } from './provide-tokens';
 
-export const provideDesignSystem = (childElement?: HTMLElement): Pick<DesignSystem, 'register'> => {
-  provideTokens(childElement);
-  const ds = DesignSystem.getOrCreate(childElement).withPrefix('fs').withDesignTokenRoot(document.documentElement);
+export const provideDesignSystem = (element: HTMLElement = document.body): Pick<DesignSystem, 'register'> => {
+  const isProvided = (element as any).$$isDesignSystemProvided;
+  const ds = DesignSystem.getOrCreate(element);
+  if (!isProvided) {
+    (element as any).$$isDesignSystemProvided = true;
+    provideTokens(element);
+    ds.withPrefix('fs').withDesignTokenRoot(document.documentElement);
+  }
   return new Proxy(ds, {
     get: (target, prop, ...rest) => {
       if (['withPrefix', 'withShadowRootMode', 'withElementDisambiguation'].includes(prop as string)) {
