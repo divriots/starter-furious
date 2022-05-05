@@ -1,6 +1,6 @@
 # tooltip
 
-The `fs-tooltip` component is used provide extra information about another element when it is hovered.
+The `fs-tooltip` component is used to provide extra information about another element when it is hovered.
 
 ## Setup
 
