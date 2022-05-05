@@ -5,19 +5,19 @@ provideDesignSystem().register(getAccordion(), getAccordionItem(), getButton(), 
 
 export const defaultStory = () => html`
   <fs-accordion>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       Accordion one content
       <div slot="heading">Accordion one</div>
     </fs-accordion-item>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       Accordion two content
       <div slot="heading">Accordion two</div>
     </fs-accordion-item>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       Accordion three content
       <div slot="heading">Accordion three</div>
     </fs-accordion-item>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       Accordion four content
       <div slot="heading">Accordion four</div>
     </fs-accordion-item>
@@ -27,7 +27,7 @@ defaultStory.storyName = 'Default';
 
 export const withStartAndEndStory = () => html`
   <fs-accordion>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       <fs-checkbox slot="start"></fs-checkbox>
       <fs-button appearance="stealth" slot="end">
         <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@ export const withStartAndEndStory = () => html`
       Accordion one content
       <div slot="heading">Accordion one</div>
     </fs-accordion-item>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       <fs-checkbox slot="start"></fs-checkbox>
       <fs-button appearance="stealth" slot="end">
         <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@ export const withStartAndEndStory = () => html`
       Accordion two content
       <div slot="heading">Accordion two</div>
     </fs-accordion-item>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       <fs-checkbox slot="start"></fs-checkbox>
       <fs-button appearance="stealth" slot="end">
         <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@ export const withStartAndEndStory = () => html`
       Accordion three content
       <div slot="heading">Accordion three</div>
     </fs-accordion-item>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       <fs-checkbox slot="start"></fs-checkbox>
       <fs-button appearance="stealth" slot="end">
         <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -81,19 +81,19 @@ withStartAndEndStory.storyName = 'With start and end';
 
 export const singleSelectionStory = () => html`
   <fs-accordion expand-mode="single">
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       Accordion one content
       <div slot="heading">Accordion one</div>
     </fs-accordion-item>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       Accordion two content
       <div slot="heading">Accordion two</div>
     </fs-accordion-item>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       Accordion three content
       <div slot="heading">Accordion three</div>
     </fs-accordion-item>
-    <fs-accordion-item slot="item">
+    <fs-accordion-item>
       Accordion four content
       <div slot="heading">Accordion four</div>
     </fs-accordion-item>
