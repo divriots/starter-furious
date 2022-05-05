@@ -14,6 +14,10 @@
         {
           "name": "grid-template-columns",
           "description": "Value that gets applied to the the css gridTemplateColumns attribute of child rows"
+        },
+        {
+          "name": "no-tabbing",
+          "description": "When true the component will not add itself or its children to the tab queue"
         }
       ]
     }
