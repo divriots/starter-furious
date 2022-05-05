@@ -10,6 +10,11 @@
           "name": "role",
           "description": "The ARIA role for the divider",
           "values": [{ "name": "separator" }, { "name": "presentation" }]
+        },
+        {
+          "name": "orientation",
+          "description": "The orientation of the divider",
+          "values": [{ "name": "horizontal" }, { "name": "vertical" }]
         }
       ]
     }
