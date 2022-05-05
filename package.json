@@ -12,11 +12,11 @@
     "serve": "npx backlight@latest serve xS11aQmjMLIvr5PU5Mru --open"
   },
   "dependencies": {
-    "@microsoft/fast-colors": "^5.1.4",
-    "@microsoft/fast-components": "^2.20.2",
-    "@microsoft/fast-element": "^1.7.0",
-    "@microsoft/fast-foundation": "^2.32.3",
-    "@microsoft/fast-web-utilities": "^5.1.0"
+    "@microsoft/fast-colors": "^5.3.0",
+    "@microsoft/fast-components": "^2.30.5",
+    "@microsoft/fast-element": "^1.10.1",
+    "@microsoft/fast-foundation": "^2.46.2",
+    "@microsoft/fast-web-utilities": "^5.4.1"
   },
   "devDependencies": {
     "@divriots/dockit-core": "^0.8.3",
