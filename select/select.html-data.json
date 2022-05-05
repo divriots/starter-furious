@@ -10,7 +10,9 @@
         {
           "name": "name",
           "description": "This element's value will be surfaced during form submission under the provided name"
-        }
+        },
+        { "name": "multiple", "description": "Indicates if the select is in multi-selection mode" },
+        { "name": "size", "description": "The maximum number of visible options" }
       ]
     }
   ]
