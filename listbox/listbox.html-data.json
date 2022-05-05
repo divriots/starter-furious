@@ -6,8 +6,8 @@
       "name": "fs-listbox",
       "description": "The listbox element",
       "attributes": [
-        { "name": "role", "description": "The ARIA role for the listbox", "values": [{ "name": "listbox" }] },
         { "name": "disabled", "description": "Sets the disabled state of the listbox" },
+        { "name": "multiple", "description": "Indicates if the listbox is in multi-selection mode" },
         { "name": "size", "description": "The maximum number of visible options" }
       ]
     }
