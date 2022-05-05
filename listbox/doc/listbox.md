@@ -22,7 +22,8 @@ provideDesignSystem().register(getListbox(), getOption());
 
 export const usageStory = () => html`
   <div>
-    <label id="preferred-format">Preferred Format:</label><br />
+    <label id="preferred-format">Preferred Format:</label>
+    <br />
     <fs-listbox aria-labelledby="preferred-format" name="preferred-format">
       <fs-option value="vinyl">Vinyl Record</fs-option>
       <fs-option value="casette">Casette</fs-option>
