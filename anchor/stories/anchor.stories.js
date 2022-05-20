@@ -3,6 +3,26 @@ import { provideDesignSystem, getAnchor } from '@divriots/starter-furious';
 
 provideDesignSystem().register(getAnchor());
 
+export default {
+  title: 'Components/Anchor',
+  argTypes: {
+    appearance: {
+      options: ['neutral', 'accent', 'hypertext', 'lightweight', 'outline', 'stealth'],
+      control: {
+        type: 'radio',
+      },
+    },
+  },
+  render: ({ appearance, label }) => `
+  <fs-anchor
+    href="javascript:void"
+    ${appearance ? `appearance="${appearance}"` : ''}
+    >
+    ${label}
+  </fs-anchor>
+`,
+};
+
 export const defaultStory = () => html` <fs-anchor href="#">Anchor</fs-anchor> `;
 defaultStory.storyName = 'Default';
 
@@ -65,3 +85,11 @@ export const iconInDefaultSlotStory = () => html`
   </fs-anchor>
 `;
 iconInDefaultSlotStory.storyName = 'Icon in default slot';
+
+export const playgroundStory = {
+  name: 'Playground (S2D)',
+  args: {
+    label: 'Anchor',
+    appearance: 'neutral',
+  },
+};

@@ -3,6 +3,31 @@ import { provideDesignSystem, getSwitch } from '@divriots/starter-furious';
 
 provideDesignSystem().register(getSwitch());
 
+export default {
+  title: 'Components/Switch',
+  argTypes: {
+    checked: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
+  render: ({ checked, disabled, label }) => `
+<fs-switch
+  ${checked ? 'checked' : ''}
+  ${disabled ? 'disabled' : ''}
+>${label}
+  <span slot="checked-message">On</span>
+  <span slot="unchecked-message">Off</span>
+</fs-switch>
+`,
+};
+
 export const defaultStory = () => html` <fs-switch></fs-switch> `;
 defaultStory.storyName = 'Default';
 
@@ -17,3 +42,12 @@ export const withSlotCheckedAndUncheckedMessageStory = () => html`
   </fs-switch>
 `;
 withSlotCheckedAndUncheckedMessageStory.storyName = 'With slot, checked and unchecked message';
+
+export const playgroundStory = {
+  name: 'Playground (S2D)',
+  args: {
+    label: 'Label',
+    checked: false,
+    disabled: false,
+  },
+};

@@ -3,6 +3,10 @@ import { provideDesignSystem, getListbox, getOption } from '@divriots/starter-fu
 
 provideDesignSystem().register(getListbox(), getOption());
 
+export default {
+  title: 'Components/Listbox',
+};
+
 export const defaultStory = () => html`
   <fs-listbox>
     <fs-option value="1">Option 1</fs-option>

@@ -3,6 +3,10 @@ import { provideDesignSystem, getBreadcrumb, getBreadcrumbItem, getButton } from
 
 provideDesignSystem().register(getBreadcrumb(), getBreadcrumbItem(), getButton());
 
+export default {
+  title: 'Components/Breadcrumb',
+};
+
 export const defaultStory = () => html`
   <fs-breadcrumb>
     <fs-breadcrumb-item href="#">Breadcrumb item 1</fs-breadcrumb-item>

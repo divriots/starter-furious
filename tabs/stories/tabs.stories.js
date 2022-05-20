@@ -3,6 +3,90 @@ import { provideDesignSystem, getButton, getTab, getTabPanel, getTabs } from '@d
 
 provideDesignSystem().register(getButton(), getTab(), getTabPanel(), getTabs());
 
+export default {
+  title: 'Components/Tabs',
+  argTypes: {
+    activeIndicator: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    orientation: {
+      options: ['horizontal', 'vertical'],
+      control: {
+        type: 'radio',
+      },
+    },
+  },
+  render: ({ activeId, activeIndicator, orientation }) => `
+<fs-tabs
+  ${orientation ? `orientation="${orientation}"` : ''}
+  ${activeIndicator ? `activeIndicator="${activeIndicator}"` : ''}
+  ${activeId ? `activeId="${activeId}"` : ''}
+>
+  <fs-tab id="TabOne">Tab one</fs-tab>
+  <fs-tab id="TabTwo">Tab two</fs-tab>
+  <fs-tab id="TabThree">Tab three</fs-tab>
+  <fs-tab-panel>
+    Tab one content. This is for testing. Tab three content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+    Tab one content. This is for testing.
+    <br />
+  </fs-tab-panel>
+  <fs-tab-panel> Tab two content. This is for testing. </fs-tab-panel>
+  <fs-tab-panel>
+    Tab three content. This is for testing. Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+    Tab three content. This is for testing.
+    <br />
+  </fs-tab-panel>
+</fs-tabs>`,
+};
+
 export const defaultStory = () => html`
   <fs-tabs>
     <fs-tab slot="tab">Tab one</fs-tab>
@@ -40,3 +124,12 @@ export const withStartAndEndStory = () => html`
   </fs-tabs>
 `;
 withStartAndEndStory.storyName = 'With start and end';
+
+export const playgroundStory = {
+  name: 'Playground (S2D)',
+  args: {
+    activeId: 'TabTwo',
+    activeIndicator: true,
+    orientation: 'horizontal',
+  },
+};

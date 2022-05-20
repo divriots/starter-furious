@@ -24,7 +24,7 @@
 
 # Docs and stories
 
-All components docs & stories are generated from [FAST repository](https://github.com/microsoft/fast), with the following license:
+All components docs & stories are generated from [FAST repository](https://github.com/microsoft/fast) and [Fluent UI Web repository](https://github.com/microsoft/fluentui), with the following license:
 
     MIT License
 
