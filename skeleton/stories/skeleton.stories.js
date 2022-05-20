@@ -3,6 +3,31 @@ import { provideDesignSystem, getSkeleton } from '@divriots/starter-furious';
 
 provideDesignSystem().register(getSkeleton());
 
+export default {
+  title: 'Components/Skeleton',
+  argTypes: {
+    shape: {
+      defaultValue: 'rect',
+      options: ['circle', 'rect'],
+      control: {
+        type: 'radio',
+      },
+    },
+    shimmer: {
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
+  render: ({ shape, shimmer }) => `
+  <fs-skeleton 
+    ${shape ? `shape="${shape}"` : ''}
+    ${shimmer ? 'shimmer' : ''} 
+    style="margin-top: 10px; height: 50px; width: 50px"
+  ></fs-skeleton>
+`,
+};
+
 export const defaultStory = () => html`
   <div>
     <div class="card-placeholder">
@@ -45,3 +70,11 @@ export const defaultStory = () => html`
   </div>
 `;
 defaultStory.storyName = 'Default';
+
+export const playgroundStory = {
+  name: 'Playground (S2D)',
+  args: {
+    shape: 'rect',
+    shimmer: false,
+  },
+};

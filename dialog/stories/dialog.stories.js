@@ -3,6 +3,10 @@ import { provideDesignSystem, getButton, getDialog } from '@divriots/starter-fur
 
 provideDesignSystem().register(getButton(), getDialog());
 
+export default {
+  title: 'Components/Dialog',
+};
+
 export const defaultStory = () => html`
   <fs-dialog>
     <div style="padding: 0 10px 10px; color: var(--neutral-foreground-rest);">

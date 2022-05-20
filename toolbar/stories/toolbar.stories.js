@@ -3,6 +3,10 @@ import { provideDesignSystem, getCheckbox, getToolbar } from '@divriots/starter-
 
 provideDesignSystem().register(getCheckbox(), getToolbar());
 
+export default {
+  title: 'Components/Toolbar',
+};
+
 export const defaultStory = () => html`
   <fs-toolbar>
     <label slot="label">Toolbar</label>

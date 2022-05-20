@@ -3,6 +3,25 @@ import { provideDesignSystem, getFlipper } from '@divriots/starter-furious';
 
 provideDesignSystem().register(getFlipper());
 
+export default {
+  title: 'Components/Flipper',
+  argTypes: {
+    direction: {
+      options: ['previous', 'next'],
+      control: {
+        type: 'select',
+      },
+    },
+    disabled: {
+      type: 'boolean',
+    },
+  },
+  render: ({ direction, disabled, content }) => `<fs-flipper 
+    ${disabled ? 'disabled' : ''} 
+    ${direction ? `direction="${direction}"` : ''}
+  ></fs-flipper>`,
+};
+
 export const defaultStory = () => html` <fs-flipper></fs-flipper> `;
 defaultStory.storyName = 'Default';
 
@@ -30,3 +49,11 @@ export const previousWithSlottedContentStory = () => html`
   </fs-flipper>
 `;
 previousWithSlottedContentStory.storyName = 'Previous with slotted content';
+
+export const playgroundStory = {
+  name: 'Playground (S2D)',
+  args: {
+    disabled: false,
+    direction: 'next',
+  },
+};

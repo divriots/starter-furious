@@ -3,6 +3,33 @@ import { provideDesignSystem, getButton } from '@divriots/starter-furious';
 
 provideDesignSystem().register(getButton());
 
+export default {
+  title: 'Components/Button',
+  argTypes: {
+    appearance: {
+      description: 'This controls the basic appearances',
+      control: {
+        type: 'select',
+      },
+      options: ['neutral', 'accent', 'lightweight', 'outline', 'stealth'],
+      default: 'neutral',
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
+  render: ({ appearance, disabled, label }) => `
+    <fs-button
+      ${disabled ? 'disabled' : ''}
+      ${appearance ? `appearance="${appearance}"` : ''}
+    >
+      ${label}
+    </fs-button>
+  `,
+};
+
 export const defaultStory = () => html` <fs-button href="#">Button</fs-button> `;
 defaultStory.storyName = 'Default';
 
@@ -65,3 +92,12 @@ export const iconInDefaultSlotStory = () => html`
   </fs-button>
 `;
 iconInDefaultSlotStory.storyName = 'Icon in default slot';
+
+export const playgroundStory = {
+  name: 'Playground (S2D)',
+  args: {
+    label: 'Button',
+    disabled: false,
+    appearance: 'accent',
+  },
+};

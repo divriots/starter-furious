@@ -3,6 +3,28 @@ import { provideDesignSystem, getDivider, getMenu, getMenuItem } from '@divriots
 
 provideDesignSystem().register(getDivider(), getMenu(), getMenuItem());
 
+export default {
+  title: 'Components/Menu',
+  render: () => `
+  <fs-menu>
+    <fs-menu-item>Menu item 1</fs-menu-item>
+    <fs-menu-item>
+      Menu item 2
+      <fs-menu>
+        <fs-menu-item>Nested Menu item 2.1</fs-menu-item>
+        <fs-menu-item>Nested Menu item 2.2</fs-menu-item>
+        <fs-menu-item>Nested Menu item 2.3</fs-menu-item>
+      </fs-menu>
+    </fs-menu-item>
+    <fs-menu-item disabled="true">Menu item 3</fs-menu-item>
+    <fs-menu-item>
+      Menu item 4
+      <div slot="end">Shortcut text</div>
+    </fs-menu-item>
+  </fs-menu>
+`,
+};
+
 export const defaultStory = () => html`
   <fs-menu>
     <fs-menu-item>Menu item 1</fs-menu-item>
@@ -111,3 +133,8 @@ export const withIconsStory = () => html`
   </fs-menu>
 `;
 withIconsStory.storyName = 'With icons';
+
+export const playgroundStory = {
+  name: 'Playground (S2D)',
+  args: {},
+};

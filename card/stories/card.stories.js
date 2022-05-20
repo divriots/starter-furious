@@ -3,6 +3,10 @@ import { provideDesignSystem, getButton, getCard } from '@divriots/starter-furio
 
 provideDesignSystem().register(getButton(), getCard());
 
+export default {
+  title: 'Components/Card',
+};
+
 export const defaultStory = () => html`
   <fs-card style="width: 300px;">
     <img src="https://via.placeholder.com/300x200/414141" />

@@ -3,6 +3,22 @@ import { provideDesignSystem, getBadge } from '@divriots/starter-furious';
 
 provideDesignSystem().register(getBadge());
 
+export default {
+  title: 'Components/Badge',
+  argTypes: {
+    appearance: {
+      options: ['neutral', 'accent', 'lightweight'],
+      control: {
+        type: 'radio',
+      },
+    },
+  },
+  render: ({ appearance, label }) => `
+  <fs-badge
+    ${appearance ? `appearance="${appearance}"` : ''}
+  >${label}</fs-badge>`,
+};
+
 export const defaultStory = () => html`
   <div>
     <style>
@@ -20,3 +36,11 @@ export const defaultStory = () => html`
   </div>
 `;
 defaultStory.storyName = 'Default';
+
+export const playgroundStory = {
+  name: 'Playground (S2D)',
+  args: {
+    label: 'Badge',
+    appearance: 'accent',
+  },
+};

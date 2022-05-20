@@ -3,6 +3,43 @@ import { provideDesignSystem, getAccordion, getAccordionItem, getButton, getChec
 
 provideDesignSystem().register(getAccordion(), getAccordionItem(), getButton(), getCheckbox());
 
+export default {
+  title: 'Components/Accordion',
+  argTypes: {
+    expandMode: {
+      options: ['single', 'multi'],
+      control: {
+        type: 'radio',
+      },
+      defaultValue: 'multi',
+    },
+  },
+  render: ({ expandMode }) => `
+  <fs-accordion
+    ${expandMode ? `expand-mode="${expandMode}"` : ''}
+  >
+    <fs-accordion-item expanded>
+      <div slot="start">
+        <button>1</button>
+      </div>
+      <div slot="end">
+        <button>1</button>
+      </div>
+      <span slot="heading">Panel one</span>
+      Panel one content
+    </fs-accordion-item>
+    <fs-accordion-item>
+      <span slot="heading">Panel two</span>
+      Panel two content
+    </fs-accordion-item>
+    <fs-accordion-item expanded>
+      <span slot="heading">Panel three</span>
+      Panel three content
+    </fs-accordion-item>
+  </fs-accordion>
+`,
+};
+
 export const defaultStory = () => html`
   <fs-accordion>
     <fs-accordion-item>
@@ -100,3 +137,8 @@ export const singleSelectionStory = () => html`
   </fs-accordion>
 `;
 singleSelectionStory.storyName = 'Single selection';
+
+export const playgroundStory = {
+  name: 'Playground (S2D)',
+  args: {},
+};
