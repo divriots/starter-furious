@@ -11,7 +11,7 @@ export default {
       control: {
         type: 'select',
       },
-      options: ['neutral', 'accent', 'lightweight', 'outline', 'stealth'],
+      options: ['neutral', 'accent', 'lightweight', 'outline', 'stealth', 'withEndStory'],
       default: 'neutral',
     },
     disabled: {

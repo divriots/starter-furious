@@ -1,7 +1,7 @@
 import { parseColorHexRGB } from '@microsoft/fast-colors';
 import { StandardLuminance, SwatchRGB } from '@microsoft/fast-components';
 
-export const accentColorValue = SwatchRGB.from(parseColorHexRGB('#D13400'));
+export const accentColorValue = SwatchRGB.from(parseColorHexRGB('#2AD13B'));
 export const neutralColorValue = SwatchRGB.from(parseColorHexRGB('#808080'));
 
 export const baseLayerLuminanceValue = StandardLuminance.LightMode;
